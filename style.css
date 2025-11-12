@@ -1,0 +1,79 @@
+/* --------------------
+        全体
+-------------------- */
+
+:root {
+  --theme-color:#FFD700 ;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  color: #ffffff;
+  background-color:#4B0082;
+}
+
+/* --------------------
+        見出し
+-------------------- */
+
+h1, h2, h3 {
+  color: var(--theme-color);
+  border-bottom: dashed 0.1em var(--theme-color);
+}
+
+/* --------------------
+        リンク
+-------------------- */
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* --------------------
+        リスト
+-------------------- */
+
+ul {
+  list-style: none;
+}
+
+li:before {
+  content: "◆";
+  color: var(--theme-color);
+}
+
+/* --------------------
+          表
+-------------------- */
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: solid 1px #ffffff;
+  min-width: 70%;
+}
+tr {
+  background-color: #191970 ;
+}
+tr:nth-child(2n) {
+  background-color: #000080;
+}
+th {
+  background: #0C0C0C;
+  color:#ffffff;
+}
+th, td {
+  border: solid 1px #f0f0f0;
+  padding: 0.5rem;
+}
